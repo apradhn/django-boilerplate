@@ -1,0 +1,18 @@
+# docker-compose-yml
+web:
+  build: ./app
+  volumes: 
+    - ./app:/code
+  ports:
+    - 8000:8000
+  restart: always
+  links: 
+    - db
+  env_file: .env
+
+db:
+  build: ./db
+  volumes:
+    - ./db:/tmp/db
+  ports:
+    - 5432:5432
