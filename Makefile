@@ -1,7 +1,6 @@
 THIS_FILE := $(lastword $(MAKEFILE_LIST))
 	
-PROJECT_NAME := hausmate
-export COMPOSE_PROJECT_NAME=$(PROJECT_NAME)
+PROJECT_NAME := boilerplate
 
 .DEFAULT_GOAL := help
 	
