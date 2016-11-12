@@ -38,3 +38,6 @@ attach:
 
 web_logs:
 	@docker logs -f $(PROJECT_NAME)_web_1
+
+ps:
+	@docker-compose ps
