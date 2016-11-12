@@ -23,9 +23,6 @@ CREATE USER "$DB_USER" WITH PASSWORD '$DB_PASSWORD' CREATEDB;
 CREATE DATABASE "$DB_NAME" WITH OWNER="$DB_USER" TEMPLATE=template0 ENCODING='$DB_ENCODING';
 EOSQL
 
-# Populate database
-# pg_restore --dbname $DB_NAME $DB_PG_DUMP_FILE
-
 set_listen_addresses='*'
 
 echo
